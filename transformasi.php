@@ -65,7 +65,7 @@
       <div class="container">
         <div class="row mb-12">
           <div class="col-md-12">
-            <div class="row">
+            <div class="row mb-3">
               <div class="col-md-4">
                 <!-- Button trigger modal --> 
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">CLUSTERING</button>
@@ -120,7 +120,7 @@
           </div>
 
             <div class="site-blocks-table col-md-12">
-              <table id="customers">
+              <table class="iterasi">
                 <thead>
                   <tr>
                     <th>NO. </th>

@@ -8,6 +8,7 @@ foreach ($satuan_slct as $dt_min_max) {
   $min_max[$dt_min_max['satuan']] = ['min' => $dt_min_max['min'], 'max' => $dt_min_max['max']];
 }
 // print("<pre>".print_r($ min_max['ampul']['min'], true)."</pre>"); exit();
+// print("<pre>".print_r($min_max, true)."</pre>"); exit();
 
 $normalisasi = array();
 // $index = 1;
@@ -24,7 +25,7 @@ foreach ($select_obat as $obat) {
     $select_data = mysqli_query($conn, "SELECT * FROM detail_obat WHERE id_obat = $id_obat AND id_tahun = $id_tahun");
     $data = mysqli_fetch_assoc($select_data); 
     // 𝑛𝑒𝑤𝑑𝑎𝑡𝑎 = (data−min)∗(newmax−newmin) / (max− 𝑚𝑖𝑛) + 𝑛𝑒𝑤𝑚𝑖𝑛
-    $normalisasi[$id_obat][$id_tahun] = round(($data['data_obat'] - $min_max[$obat['satuan']]['min']) * ($max - $min) / ($min_max[$obat['satuan']]['max'] - $min_max[$obat['satuan']]['min']) + $min, 5);
+    $normalisasi[$id_obat][$id_tahun] = round(($data['data_obat'] - $min_max[$obat['satuan']]['min']) * ($max - $min) / ($min_max[$obat['satuan']]['max'] - $min_max[$obat['satuan']]['min']) + $min, 6);
   }
   // $index++;
 }

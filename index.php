@@ -26,7 +26,6 @@
 
   <div class="site-wrap">
 
-
     <div class="site-navbar py-2">
 
       <div class="search-wrap">
@@ -70,10 +69,10 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="banner-wrap bg-primary h-100">
               <a href="#" class="h-100">
-                <h5>Data Preprocessing</h5>
+                <h5>Data Mining</h5>
                 <p>
-                  Amet sit amet dolor
-                  <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
+                  <strong>Data mining merupakan proses yang menggunakan teknik statistik, matematika, kecerdasan buatan, dan machine learning untuk mengekstraksi dan mengidentifikasi informasi yang bermanfaat dan pengetahuan yang terkait dari berbagai database besar. Data mining membahas penggalian atau pengumpulan informasi yang berguna dari kumpulan data.</strong>
+                    <strong>(Kusrini & Luthfi, 2009)</strong>
                 </p>
               </a>
             </div>
@@ -81,9 +80,9 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="banner-wrap h-100">
               <a href="#" class="h-100">
-                <h5>K-Means Clustering</h5>
+                <h5>Clustering</h5>
                 <p>
-                  <strong>Metode penganalisaan data atau metode Data Mining yang melakukan pengelompokan data dengan sistem partisi non-hierarchical.</strong>
+                  <strong>clustering adalah sebuah proses untuk mengelompokkan data ke dalam beberapa cluster  atau kelompok sehingga data dalam satu cluster  memiliki tingkat kemiripan yang maksimum dan data antar cluster  memiliki kemiripan yang minimum. (Han, Kamber, & Pei, 2012).</strong>
                 </p>
               </a>
             </div>
@@ -91,9 +90,10 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="banner-wrap bg-warning h-100">
               <a href="#" class="h-100">
-                <h5>Data Visualization</h5>
+                <h5>K-Means</h5>
                 <p>
-                  <strong>Representasi grafis dari informasi dan data menggunakan elemen-elemen, seperti tabel, grafik, dan peta dalam memahami berbagai fakta dan pola-pola dalam data.</strong>
+                  <strong>K-means adalah algoritma clustering non hirarki dalam bidang data mining yang digunakan untuk cluster  analisis dan memiliki efisiensi tinggi pada partisi data terutama dalam dataset besar.</strong>
+                  <strong>(Robani & Widodo, 2016)</strong>
                 </p>
               </a>
             </div>

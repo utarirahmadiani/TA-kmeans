@@ -26,10 +26,7 @@
 <body>
 
   <div class="site-wrap">
-
-
     <div class="site-navbar py-2">
-
       <div class="search-wrap">
         <div class="container">
           <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
@@ -72,23 +69,39 @@
 
     <div class="site-section">
       <div class="container">
-        <div class="row mb-5">
-          <form class="col-md-12" method="post">
-            <div class="row">
-              
-              
-              <div class="col-md-4">
-                <a href="upload.php" class="btn btn-primary btn-md px-4">upload file</a>
-                
-                <a href="hapus.php" class="btn btn-primary btn-md px-4">hapus data</a> 
+            <div class="row mb-3">
+              <div class="col-md-2">
+
+                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">UPLOAD FILE</button>
+                  <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Upload File</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      
+                        
+                          <?php 
+                            include ('connection.php');
+                          ?>
+                            <form method="post" enctype="multipart/form-data" action="upload_aksi.php">
+                              <input name="fileobat" type="file" required="required"> 
+                              <input class="btn btn-primary btn-md px-2" name="upload" type="submit" value="Import">
+                            </form>
+                        
+                      
+                    </div>
+                  </div>
+                </div>
               </div>
-            
-              <div class="col-md-4">
-                
-                <a href="transformasi.php" class="btn btn-primary btn-md px-4">normalisasi</a>
             </div>
-          </div> 
-          </div>
+                <a href="transformasi.php" class="btn btn-primary btn-md px-4">normalisasi</a>
+      </div>
 
           <?php 
             if(isset($_GET['berhasil'])){
@@ -97,7 +110,7 @@
           ?>
 
             <div class="site-blocks-table">
-              <table id="customers">
+              <table class="iterasi">
                 <thead>
                   <tr>
                     <th>NO. </th>
@@ -143,8 +156,7 @@
                 </tbody>
               </table>
             </div>
-          </form>
-        </div>
+          
       </div>
     </div>
 <?php include("footer.php"); ?>
